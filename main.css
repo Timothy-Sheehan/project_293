@@ -1,0 +1,142 @@
+html, body
+{
+    padding:0;
+    margin:0;
+}
+/* Header Code */
+header
+{
+    z-index:5;
+    width:100%;
+    height:4em;
+    position:fixed;
+    background-color:white;
+}
+.logo
+{
+    height:100%;
+    margin-left:2%;
+    height:3.75em;
+    font-family:Rubik Mono One;
+    font-size:2.5em;
+    margin-top:0.25em;
+    float:left;
+}
+.headerlink
+{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    float:right;
+    font-size:1.5em;
+    font-family:Roboto;
+    padding:0.5em 1em 0.5em;
+    margin-top:0.25em;
+    margin-right:0.5%;
+}
+.headerlink:first-child
+{
+    margin-right:1.5%;
+}
+.mobilemenu
+{
+    border-color:black;
+    background-color:white;
+    display:none;
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    float:right;
+    font-size:1.5em;
+    font-family:Roboto;
+    padding:0.5em 1em 0.5em;
+    margin-top:0.25em;
+    margin-right:2%;
+}
+/* Content Code */
+.purpose
+{
+    z-index:4;
+    float:left;
+    width:100%;
+    height:8em;
+    background-color:black;
+    text-align:center;
+    margin-top:4em;
+}
+.purposetext
+{
+    color:white;
+    font-family:Roboto; 
+    margin-top:1.5em;
+    font-size:2em;
+}
+/* Animation */
+.headerlink:hover
+{
+    animation:animlink 0.5s;
+    animation-fill-mode:forwards;
+    -o-animation:animlink 0.5s;
+    -o-animation-fill-mode:forwards;
+    -webkit-animation:animlink 0.5s;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation:animlink 0.5s;
+}
+@keyframes animlink
+{
+    0%
+    {
+        background-color:white;
+    }
+    100%
+    {
+        background-color:black;
+        color:white;
+    }
+}
+@-moz-keyframes animlink
+{
+    0%
+    {
+        background-color:white;
+    }
+    100%
+    {
+        background-color:black;
+        color:white;
+    }
+}
+@-webkit-keyframes animlink
+{
+    0%
+    {
+        background-color:white;
+    }
+    100%
+    {
+        background-color:black;
+        color:white;
+    }
+}
+@-o-keyframes animlink
+{
+    0%
+    {
+        background-color:white;
+    }
+    100%
+    {
+        background-color:black;
+        color:white;
+    }
+}
+/* Mobile Optimization */
+@media only screen and (max-width:1000px)
+{   
+    .headerlink
+    {
+        display:none;
+    }
+    .mobilemenu
+    {
+        display:block;
+    }
+}
