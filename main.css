@@ -8,15 +8,14 @@ header
 {
     z-index:5;
     width:100%;
-    height:4em;
+    height:6em;
     position:fixed;
     background-color:white;
 }
 .logo
 {
-    height:100%;
     margin-left:2%;
-    height:3.75em;
+    max-height:2em;
     font-family:Rubik Mono One;
     font-size:2.5em;
     margin-top:0.25em;
@@ -30,7 +29,7 @@ header
     font-size:1.5em;
     font-family:Roboto;
     padding:0.5em 1em 0.5em;
-    margin-top:0.25em;
+    margin-top:1em;
     margin-right:0.5%;
 }
 .headerlink:first-child
@@ -48,7 +47,7 @@ header
     font-size:1.5em;
     font-family:Roboto;
     padding:0.5em 1em 0.5em;
-    margin-top:0.25em;
+    margin-top:1em;
     margin-right:2%;
 }
 /* Content Code */
@@ -57,8 +56,13 @@ header
     z-index:4;
     float:left;
     width:100%;
-    height:8em;
+    height:30em;
     background-color:black;
+	background-image:url(../img/group.jpeg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	background-size:cover;
     text-align:center;
     margin-top:4em;
 }
@@ -66,10 +70,71 @@ header
 {
     color:white;
     font-family:Roboto; 
-    margin-top:1.5em;
+    margin-top:7em;
     font-size:2em;
+	text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+}
+.founder
+{
+    width:100%;
+    float:left;
+    height:15em;
+    text-align:center;
+}
+.founderaside
+{
+    width:50%;
+    float:left;
+}
+.founderarticle
+{
+    width:50%;
+    float:left;
+    font-family:Roboto;
+}
+.articlelink
+{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    float:left;
+    font-size:1.5em;
+    font-family:Roboto;
+    width:15%;
+    padding-top:0.25em;
+    padding-bottom:0.25em;
+    margin-top:1em;
+    border-color:black;
+    border-width:3px;
+    border-style:solid;
+    margin-left:42.5%;
+}
+.services
+{
+    width:100%;
+    height:20em;
+}
+.serviceicon
+{
+    height:1em;
+    width:25%;
+    margin-left:3%;
+    float:left;
+}
+.serviceicon
+{
+    width:50%;
 }
 /* Animation */
+.articlelink:hover
+{
+    animation:animlink 0.5s;
+    animation-fill-mode:forwards;
+    -o-animation:animlink 0.5s;
+    -o-animation-fill-mode:forwards;
+    -webkit-animation:animlink 0.5s;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation:animlink 0.5s;
+}
 .headerlink:hover
 {
     animation:animlink 0.5s;
@@ -138,5 +203,9 @@ header
     .mobilemenu
     {
         display:block;
+    }
+    .articlelink
+    {
+        width:30%;
     }
 }
